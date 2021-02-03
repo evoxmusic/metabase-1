@@ -1,0 +1,14 @@
+application:
+  name: metabase
+  project: CHANGEME
+  organization: CHANGEME
+databases:
+- name: psql
+  type: postgresql
+  version: 12
+routers:
+- name: metabase-router
+  routes:
+  - application_name: metabase
+    paths:
+    - "/"
